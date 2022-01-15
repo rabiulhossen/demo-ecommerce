@@ -28,19 +28,26 @@ nav {
     justify-content: space-between;
 }
 
-.first-button {
+.button {
     outline: 0;
     border: 0;
-    padding: 10px 20px;
+    padding: 10px 15px;
     background-image: linear-gradient( #c21273, #FF008E);
     color: white;
-    font-size: 18px;
+    font-size: 19px;
     border-radius: 12px;
     cursor: pointer;
     box-shadow: 0 9px 0 #a5075e;
 }
 
-.last-btn {}
+.arrow {
+    font-size: 25px;
+}
+
+.last-btn {
+    text-align: center;
+    text-transform: uppercase;
+}
 
 .camera {
     width: 50%;
