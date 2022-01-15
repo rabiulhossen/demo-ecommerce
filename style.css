@@ -120,3 +120,13 @@
                 margin: 0px;
                 font-size: 13px;
             }
+            
+            .foot {
+                margin-top: 90px;
+                background-color: rgb(30, 4, 65);
+                text-align: center;
+                color: ivory;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                width: 100%;
+            }
