@@ -138,3 +138,20 @@
             padding-bottom: 50px;
             width: 100%;
         }
+        /*-------- responsive css--------- */
+        
+        @media(max-width:960px) {
+            .left-camera {
+                grid-template-columns: repeat(1, 1fr);
+                /* padding-right: 30px; */
+            }
+            .logo {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .image-add {
+                grid-template-columns: repeat(2, 1fr);
+                padding-right: 30px;
+                margin-left: -20px;
+            }
+        }
