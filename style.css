@@ -1,157 +1,191 @@
-        * {
-            margin: 5px 10px;
-            padding: auto 30px;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Ubuntu', sans-serif;
-        }
-        
-        .menu {
-            display: flex;
-            padding: 0 30px;
-        }
-        
-        nav {
-            justify-content: space-between;
-            height: 80px;
-            align-items: center;
-        }
-        
-        .navigation li {
-            list-style: none;
-            margin: 10px;
-        }
-        
-        .left-written {
-            width: 40%;
-            margin-top: 40px;
-        }
-        
-        .left-camera {
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .button {
-            outline: 0;
-            border: 0;
-            padding: 10px 15px;
-            background-image: linear-gradient( #c21273, #FF008E);
-            color: white;
-            font-size: 19px;
-            border-radius: 12px;
-            cursor: pointer;
-            box-shadow: 0 9px 0 #a5075e;
-        }
-        
-        .arrow {
-            font-size: 25px;
-        }
-        
-        .last-btn {
-            text-align: center;
-            text-transform: uppercase;
-            margin-left: 1050px;
-            margin-top: 25px;
-        }
-        
-        .button:active {
-            top: 5px;
-            box-shadow: 0 1px 0 #a70953;
-        }
-        
-        .camera {
-            width: 50%;
-            background-image: url(./images/Circle\ design.svg);
-            background-repeat: no-repeat;
-        }
-        
-        .camera img {
-            width: 400px;
-        }
-        
-        .navigation {
-            display: flex;
-        }
-        
-        .navigation li a {
-            text-decoration: none;
-            font-weight: 600;
-            padding: 15px 10px;
-            color: rgba(16, 181, 202, 0.986)
-        }
-        
-        .heading {
-            font-weight: 800;
-            font-size: 30px;
-        }
-        
-        .heading-2 {
-            text-align: center;
-            text-transform: uppercase;
-            line-height: 2em;
-        }
-        
-        .up-logo {
-            margin-top: 80px;
-            margin-left: 20px;
-            margin-right: 20px;
-            border-top: rgb(247, 200, 200) 1px solid;
-            border-bottom: solid 1px wheat;
-        }
-        
-        .logo {
-            display: flex;
-            justify-content: center;
-        }
-        
-        .image-add {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-column-gap: 10px;
-            grid-row-gap: 30px;
-        }
-        
-        .card {
-            width: 380px;
-            padding: 25px 30px;
-            margin: 10px auto;
-            box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
-            border-radius: 10px;
-        }
-        
-        .card .icons .filled {
-            color: rgb(253, 215, 117);
-            padding: 0px;
-            margin: 0px;
-            font-size: 13px;
-        }
-        
-        .foot {
-            margin-top: 90px;
-            background-color: rgb(30, 4, 65);
-            text-align: center;
-            color: ivory;
-            padding-top: 50px;
-            padding-bottom: 50px;
-            width: 100%;
-        }
-        /*-------- responsive css--------- */
-        
-        @media(max-width:960px) {
-            .left-camera {
-                grid-template-columns: repeat(1, 1fr);
-                /* padding-right: 30px; */
-            }
-            .logo {
-                flex-direction: row;
-                flex-wrap: wrap;
-            }
-            .image-add {
-                grid-template-columns: repeat(2, 1fr);
-                padding-right: 30px;
-                margin-left: -20px;
-            }
-        }
+* {
+    margin: 5px 10px;
+    padding: auto 30px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.menu {
+    display: flex;
+    padding: 0 30px;
+}
+
+nav {
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.navigation li {
+    list-style: none;
+    margin: 10px;
+}
+
+.left-written {
+    width: 40%;
+    margin-top: 40px;
+}
+
+.left-camera {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    outline: 0;
+    border: 0;
+    padding: 10px 15px;
+    background-image: linear-gradient( #c21273, #FF008E);
+    color: white;
+    font-size: 19px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 9px 0 #a5075e;
+}
+
+.arrow {
+    font-size: 25px;
+}
+
+.last-btn {
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 1050px;
+    margin-top: 25px;
+}
+
+.button:active {
+    top: 5px;
+    box-shadow: 0 1px 0 #a70953;
+}
+
+.camera {
+    width: 50%;
+    background-image: url(./images/Circle\ design.svg);
+    background-repeat: no-repeat;
+}
+
+.camera img {
+    width: 400px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation li a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 15px 10px;
+    color: rgba(16, 181, 202, 0.986)
+}
+
+.heading {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.heading-2 {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2em;
+}
+
+.up-logo {
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-top: rgb(247, 200, 200) 1px solid;
+    border-bottom: solid 1px wheat;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.image-add {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+}
+
+.card {
+    width: 380px;
+    padding: 25px 30px;
+    margin: 10px auto;
+    box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
+
+.card .icons .filled {
+    color: rgb(253, 215, 117);
+    padding: 0px;
+    margin: 0px;
+    font-size: 13px;
+}
+
+.foot {
+    margin-top: 90px;
+    background-color: rgb(30, 4, 65);
+    text-align: center;
+    color: ivory;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+
+/*-------- responsive css--------- */
+
+@media(max-width:960px) {
+    .left-camera {
+        grid-template-columns: repeat(1, 1fr);
+        /* padding-right: 30px; */
+    }
+    .logo {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .image-add {
+        grid-template-columns: repeat(2, 1fr);
+        padding-right: 30px;
+        margin-left: -20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .left-camera {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .camera img {
+        width: 250px;
+    }
+    .logo {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+        width: 80%;
+    }
+    .image-add {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .heading.heading-2 {
+        text-align: center;
+        font-size: 22px;
+    }
+    .last-btn {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    nav {
+        display: inline-block
+    }
+}
