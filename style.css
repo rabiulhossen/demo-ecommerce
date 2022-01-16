@@ -1,11 +1,15 @@
 * {
-    margin: 5px 10px;
+    margin: 5px 0px;
     padding: auto 30px;
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+    margin-left: 50px;
 }
 
 .menu {
@@ -56,7 +60,7 @@ nav {
 .last-btn {
     text-align: center;
     text-transform: uppercase;
-    margin-left: 1050px;
+    margin-left: 1100px;
     margin-top: 25px;
 }
 
@@ -218,7 +222,7 @@ nav {
         align-items: center;
     }
     .deal {
-        padding-left: 0;
+        padding-left: 58px;
     }
 }
 
@@ -261,6 +265,7 @@ nav {
     .last-btn {
         display: flex;
         flex-direction: row-reverse;
+        margin-left: 40px;
     }
     .navigation {
         display: none;
