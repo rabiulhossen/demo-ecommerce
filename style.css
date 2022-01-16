@@ -66,6 +66,7 @@ nav {
     width: 50%;
     background-image: url(./images/Circle\ design.svg);
     background-repeat: no-repeat;
+    background-size: 400px;
 }
 
 .camera img {
@@ -85,6 +86,11 @@ nav {
 
 .heading {
     font-weight: 800;
+    font-size: 27px;
+}
+
+.heading-1 {
+    font-weight: 800;
     font-size: 30px;
 }
 
@@ -95,7 +101,7 @@ nav {
 }
 
 .up-logo {
-    margin-top: 80px;
+    margin-top: 90px;
     margin-left: 20px;
     margin-right: 20px;
     border-top: rgb(247, 200, 200) 1px solid;
@@ -105,6 +111,7 @@ nav {
 .logo {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .image-add {
@@ -144,8 +151,14 @@ nav {
 
 @media(max-width:960px) {
     .left-camera {
-        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
         /* padding-right: 30px; */
+        justify-content: center;
+        align-items: center;
+    }
+    .camera {
+        margin-top: 25px;
+        background-size: 400px;
     }
     .logo {
         flex-direction: row;
@@ -153,12 +166,16 @@ nav {
     }
     .image-add {
         grid-template-columns: repeat(2, 1fr);
-        padding-right: 30px;
-        margin-left: -20px;
+    }
+    .last-btn {
+        margin-left: 200px;
+    }
+    .heading {
+        text-align: center;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
     .left-camera {
         flex-direction: column;
         justify-content: center;
@@ -167,17 +184,27 @@ nav {
     .camera img {
         width: 250px;
     }
+    .camera {
+        background-size: 250px;
+    }
     .logo {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         padding: 0px;
         width: 80%;
     }
     .image-add {
         grid-template-columns: repeat(1, 1fr);
     }
-    .heading.heading-2 {
+    header nav div h1 {
+        text-align: center;
+        font-size: 20px;
+        margin-left: 160px;
+        margin-bottom: 0%;
+    }
+    .heading-1 {
         text-align: center;
         font-size: 22px;
     }
@@ -185,7 +212,10 @@ nav {
         display: flex;
         flex-direction: row-reverse;
     }
-    nav {
-        display: inline-block
+    .navigation {
+        display: none;
+    }
+    .last-btn {
+        margin-left: 320px;
     }
 }
