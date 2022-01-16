@@ -34,6 +34,9 @@ nav {
     justify-content: space-between;
 }
 
+
+/*============ button style ================ */
+
 .button {
     outline: 0;
     border: 0;
@@ -62,6 +65,9 @@ nav {
     box-shadow: 0 1px 0 #a70953;
 }
 
+
+/*------------------ button end ---------------------- */
+
 .camera {
     width: 50%;
     background-image: url(./images/Circle\ design.svg);
@@ -71,6 +77,11 @@ nav {
 
 .camera img {
     width: 400px;
+}
+
+.camera img:hover {
+    transform: rotate(360deg);
+    transition: 3s;
 }
 
 .navigation {
@@ -136,6 +147,9 @@ nav {
     font-size: 13px;
 }
 
+
+/*.................. footer style ...................... */
+
 .foot {
     margin-top: 90px;
     background-color: rgb(30, 4, 65);
@@ -168,7 +182,8 @@ nav {
         grid-template-columns: repeat(2, 1fr);
     }
     .last-btn {
-        margin-left: 200px;
+        margin-left: 218px;
+        display: inline-block;
     }
     .heading {
         text-align: center;
@@ -217,5 +232,6 @@ nav {
     }
     .last-btn {
         margin-left: 320px;
+        display: inline-block;
     }
 }
