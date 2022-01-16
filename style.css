@@ -82,6 +82,7 @@ nav {
 .camera img:hover {
     transform: rotate(360deg);
     transition: 3s;
+    transition-timing-function: ease-out;
 }
 
 .navigation {
@@ -161,6 +162,28 @@ nav {
 }
 
 
+/*//////////// extra-css//////////////// */
+
+.extra {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.extra div img {
+    width: 380px;
+}
+
+.deal {
+    width: 60%;
+    padding-right: 10em;
+    margin-left: 60px;
+    padding-left: 40px;
+    text-align: left;
+}
+
+
 /*-------- responsive css--------- */
 
 @media(max-width:960px) {
@@ -188,6 +211,15 @@ nav {
     .heading {
         text-align: center;
     }
+    /*======= exta ========= */
+    .extra {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .deal {
+        padding-left: 0;
+    }
 }
 
 @media (max-width: 750px) {
@@ -207,7 +239,10 @@ nav {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        padding: 0px;
+        padding-left: 30px;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-right: 0%;
         width: 80%;
     }
     .image-add {
@@ -233,5 +268,14 @@ nav {
     .last-btn {
         margin-left: 320px;
         display: inline-block;
+    }
+    .extra {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .deal {
+        margin-bottom: 40PX;
+        padding-left: 0;
     }
 }
